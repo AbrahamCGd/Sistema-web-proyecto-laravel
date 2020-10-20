@@ -200,7 +200,7 @@
           <b>Version</b> 2.3.0
         </div>
         <strong>
-          Copyright &copy; 2015-2020 <a href="">IncanatoIT</a>.
+          Copyright &copy; 2015-2020 <a href="https://www.facebook.com/">IncanatoIT</a>.
         </strong> All rights reserved.
       </footer>
 
