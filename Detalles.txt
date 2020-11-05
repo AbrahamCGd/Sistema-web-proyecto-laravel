@@ -1,0 +1,26 @@
+php artisan serve app:name nuevonombre
+En la carpeta config cambiar app.php 
+	linea 42 'debug' => env('APP_DEBUG', true),
+	linea 70 'timezone' => 'America/Mexico_City',
+	linea 83 'locale' => 'es',
+Crear los archivos de idioma
+php artisan make:model Model
+php artisan make:controller Controller
+php artisan make:request FormRequest
+
+Al agregar las plantillas modificar composer.json
+	linea 10 "laravelcollective/html":"^5.8.0"
+composer update
+Agregar un provider en los providers que están en config/app.php
+	  'providers' => [
+    		// ...
+    			Collective\Html\HtmlServiceProvider::class,
+   	 	// ...
+  	  ],
+Agregar un aliases en los aliases aliases que esta en array of config/app.php
+	'aliases' => [
+    		// ...
+      			'Form' => Collective\Html\FormFacade::class,
+     	 		'Html' => Collective\Html\HtmlFacade::class,
+    		// ...
+  		],
